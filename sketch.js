@@ -14,7 +14,8 @@ const TXT_FILES = [
 const SPEED = 0.005;        // 0..1 per frame
 const HOLD_SECONDS = 0.6;
 
-// Fit + look        
+// Fit + look  
+const ZOOM = 1.0;  
 const MIN_FONT_SIZE = 6;
 const LINEH_MULT = 1.05;
 
