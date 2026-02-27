@@ -74,10 +74,10 @@ function onLoaded() {
   loaded++;
 
   if (loaded >= NEED) {
-    if (asciiFont) textFont(asciiFont); // use custom font if it loaded
+    if (asciiFont) textFont(asciiFont); 
 
     if (!frames[0] || !frames[1] || !frames[2]) {
-      ready = false; // keep showing error screen
+      ready = false; 
       return;
     }
 
@@ -92,6 +92,8 @@ function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
   fitted = false;
 }
+
+
 
 function draw() {
   background(255);
@@ -114,6 +116,8 @@ function draw() {
     fitted = true;
   }
 
+
+  
   const next = (current + 1) % frames.length;
   const A = frames[current].join("\n");
   const B = frames[next].join("\n");
@@ -143,6 +147,12 @@ function resetTransition() {
   holding = false;
   transitionId++;
 }
+
+
+
+
+
+
 
 /**
  * Smooth random-start per character, with 2 overlapping groups:
